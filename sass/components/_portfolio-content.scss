@@ -1,0 +1,22 @@
+.portfolio-content {
+    padding: 20px 24px;
+    border: 1px solid getColor('background-color-portfolio');
+
+    &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: getColor('title-text-color');
+    margin-bottom: 4px;
+    }
+    
+    &__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: getColor('primary-text-color');
+    }
+}
+

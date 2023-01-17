@@ -1,0 +1,42 @@
+
+$colors: (
+    'title-text-color': #212121,
+    'primary-color-fill': #FFFFFF,
+    'primary-color-button': #FFFFFF,
+    'primary-text-color': #757575,
+    'secondary-color-fill': #AFB1B8,
+    'secondary-color-button': #212121,
+    'color-hover-fill': #F5F5F5,
+    'color-fill': #2196F3,
+    'color-hero': #ffffff,
+    'color-text-area': rgba(117, 117, 117, 0.5),
+    'color-input': rgba(255, 255, 255, 0.6),
+    'color-link-footer': rgba(255, 255, 255, 0.6),
+    'background-color-rgba': rgba(47, 48, 58, 0.8),
+    'border-rgba':rgba(255, 255, 255, 0.3),
+    'background-color-backdrop': rgba(0, 0, 0, 0.2),
+    'background-color-box': #188CE8,
+    'border-color': #2196F3,
+    'border-black': rgba(33, 33, 33, 0.2),
+    'border': #EEEEEE,
+    'logo-header-footer': #2196F3,
+    'background-color-white': #FFFFFF,
+    'background-color': #2F303A,
+    'background-color-section': #F5F5F5,
+    'background-color-team': #F5F4FA,
+    'background-color-footer': #2F303A,
+    'background-color-button': #2196F3,
+    'background-color-portfolio': #EEEEEE,
+    'background-color-portfolio-hero': #F5F5F5,
+    'hover-color': #2196F3,
+    'accent-color': #000000,
+    'accent-color-white': #FFFFFF,
+    'link-current': #2196F3,
+    'border-bottom': #ECECEC,
+  
+    
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}

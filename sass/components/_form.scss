@@ -1,0 +1,65 @@
+.form{
+    &__field-label {
+    display: flex;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: getColor('primary-text-color');
+    }
+
+    &__field {
+    position: relative;
+    }
+
+    &__field-input {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    margin-bottom: 10px;
+    padding: 0 15px 0 42px;
+    height: 40px;
+    width: 100%;
+    border: 1px solid getColor('border-black');
+    border-radius: 4px;
+    outline: none;
+    }
+
+    &__field-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    }
+    
+    &__field-textarea {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    height: 120px;
+    width: 100%;
+    border: 1px solid getColor('border-black');
+    border-radius: 4px;
+    outline: none;
+    resize: none;
+    }
+    &__field-input:focus {
+    border-color: getColor('border-color');
+    }
+    
+    &__field-textarea::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: getColor('color-text-area');
+    }
+     
+    &__field-input:focus + &__field-icon {
+    fill: getColor('color-fill');
+    }
+    
+    &__field-textarea:focus {
+    border-color: getColor('border-color');
+    }
+}
+ 

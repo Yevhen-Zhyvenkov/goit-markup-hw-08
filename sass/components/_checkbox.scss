@@ -1,0 +1,36 @@
+.checkbox {
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: getColor('primary-text-color');
+
+    &__icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    border: 2px solid getColor('title-text-color');
+    border-radius: 2px;
+    width: 16px;
+    height: 15px;
+    fill: transparent;
+    }
+    
+    &__label {
+    position: relative;
+    padding-left: 37px;
+    }
+    
+    &__text {
+    color: getColor('hover-color');
+    }
+    &__imput:checked + &__icon {
+    fill: getColor('accent-color-white');
+    background-color: getColor('background-color-button');
+    border: 0.2px solid getColor('accent-color-white');
+}
+}
+
