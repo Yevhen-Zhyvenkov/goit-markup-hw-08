@@ -1,5 +1,12 @@
 .footer-network{
+    
+    @media screen and (max-width:767px) {
+        margin-bottom: 60px;
+    }
     &__title {
+        display: flex;
+        justify-content: center;
+        text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -13,6 +20,7 @@
     &__list {
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     &__item {

@@ -1,27 +1,37 @@
 .checkbox {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: getColor('primary-text-color');
+    @media screen and (min-width:1200px) {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.71;
+    }
 
     &__icon {
     position: absolute;
     top: 50%;
-    left: 15px;
+    left: 0;
     transform: translateY(-50%);
     border: 2px solid getColor('title-text-color');
     border-radius: 2px;
     width: 16px;
     height: 15px;
     fill: transparent;
+    @media screen and (min-width:1200px){
+    left: 15px;
+    }
     }
     
     &__label {
     position: relative;
-    padding-left: 37px;
+    padding-left: 24px;
+    @media screen and (min-width:1200px) {
+    padding-left: 39px;}
     }
     
     &__text {

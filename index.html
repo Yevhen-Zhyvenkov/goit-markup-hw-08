@@ -62,6 +62,11 @@
               </div>
             </li>
           </ul>
+          <button class="header__burger js-open-menu" type="button">
+            <svg class="header__" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu-mobile"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -139,27 +144,47 @@
           <h2 class="description-section__title">Чим ми займаємося</h2>
           <ul class="description-section__list">
             <li class="description-section__item">
-              <img
-                src="./images/img1.jpg"
-                alt="людина займається написанням коду"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/desktop.jpg 1x, ./images/desktop2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/desktop.jpg"
+                  alt="людина займається написанням коду"
+                  width="370"
+                />
+              </picture>
+
               <p class="description-section__text">Десктопні додатки</p>
             </li>
             <li class="description-section__item">
-              <img
-                src="./images/img2.jpg"
-                alt="людина перевіряє зв'язок між телефоном та ноутбуком"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/mobile.jpg 1x, ./images/desktop2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/mobile.jpg"
+                  alt="людина перевіряє зв'язок між телефоном та ноутбуком"
+                  width="370"
+                />
+              </picture>
+
               <p class="description-section__text">Мобільні додатки</p>
             </li>
             <li class="description-section__item">
-              <img
-                src="./images/img3.jpg"
-                alt="працівник вибирає колір"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/tablet.jpg 1x, ./images/desktop2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/tablet.jpg"
+                  alt="людина перевіряє зв'язок між телефоном та ноутбуком"
+                  width="370"
+                />
+              </picture>
               <p class="description-section__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -170,11 +195,32 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                src="./images/img4.jpg"
-                alt="усміхнений чоловік з бородою в бордовій сорочці"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ihor-desktop.jpg   1x,
+                    ./images/ihor-desktop2x.jpg 2x
+                  "
+                  media="(min-width:1200px)" />
+                <source
+                  srcset="
+                    ./images/ihor-tablet.jpg   1x,
+                    ./images/ihor-tablet2x.jpg 2x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/ihor-mobile.jpg   1x,
+                    ./images/ihor-mobile2x.jpg 2x
+                  "
+                  media="(max-width:767px)" />
+                <img
+                  class="team__image"
+                  src="./images/ihor-mobile.jpg"
+                  alt="усміхнений чоловік з бородою в бордовій сорочці"
+                  width="270"
+              /></picture>
+
               <div class="workers">
                 <h3 class="workers__list">Ігор Дем'яненко</h3>
                 <p class="workers__profecion" lang="en">Product Designer</p>
@@ -211,11 +257,36 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/img5.jpg"
-                alt="усміхена жінка блондинка в офіційному костюмі"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/olha-desktop.jpg   1x,
+                    ./images/olha-desktop2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/olha-tablet.jpg   1x,
+                    ./images/olha-tablet2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/olha-mobile.jpg   1x,
+                    ./images/olha-mobile2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="team__image"
+                  src="./images/olha-mobile.jpg"
+                  alt="усміхена жінка блондинка в офіційному костюмі"
+                  width="270"
+                />
+              </picture>
+
               <div class="workers">
                 <h3 class="workers__list">Ольга Рєпіна</h3>
                 <p class="workers__profecion" lang="en">Frontend Developer</p>
@@ -252,11 +323,36 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/img6.jpg"
-                alt="щасливий чоловік у світлій сорочці"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mykola-desktop.jpg   1x,
+                    ./images/mykola-desktop2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykola-tablet.jpg   1x,
+                    ./images/mykola-tablet2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykola-mobile.jpg   1x,
+                    ./images/mykola-mobile2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="team__image"
+                  src="./images/mykola-mobile.jpg"
+                  alt="щасливий чоловік у світлій сорочці"
+                  width="270"
+                />
+              </picture>
+
               <div class="workers">
                 <h3 class="workers__list">Микола Тарасов</h3>
                 <p class="workers__profecion" lang="en">Marketing</p>
@@ -293,11 +389,36 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/img7.jpg"
-                alt="впевнений в собі чоловік в темній сорочці та окулярах"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mykhailo-desktop.jpg   1x,
+                    ./images/mykhailo-desktop2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykhailo-tablet.jpg   1x,
+                    ./images/mykhailo-tablet2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykhailo-mobile.jpg   1x,
+                    ./images/mykhailo-mobile2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="team__image"
+                  src="./images/mykhailo-mobile.jpg"
+                  alt="впевнений в собі чоловік в темній сорочці та окулярах"
+                  width="270"
+                />
+              </picture>
+
               <div class="workers">
                 <h3 class="workers__list">Михайло Єрмаков</h3>
                 <p class="workers__profecion" lang="en">UI Designer</p>
@@ -426,7 +547,7 @@
                       href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
-                      class="footer__link"
+                      class="footer__link footer__accent"
                       >м. Київ, пр-т Лесі Українки, 26</a
                     >
                   </li>
@@ -590,6 +711,88 @@
       </div>
     </div>
 
+    <div class="mobile-menu js-menu-container">
+      <button class="mobile-menu__close js-close-menu" type="button">
+        <svg
+          class="mobile-menu__icon"
+          width="40"
+          height="40"
+          aria-label="Перемикач меню"
+        >
+          <use
+            class="header__icon-close"
+            href="./images/icons.svg#icon-menu-close"
+          ></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu__site">
+        <li class="mobile-menu__item">
+          <a href="./index.html" class="mobile-menu__link">Студія</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="navigation-mobile">
+        <li class="navigation-mobile__item">
+          <a href="tel:+380961111111" class="navigation-mobile__link"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="navigation-mobile__item">
+          <a
+            class="navigation-mobile__link"
+            lang="en"
+            href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-socials">
+        <li class="mobile-socials__item">
+          <a
+            href="#"
+            class="mobile-socials__link"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >Instagram</a
+          >
+        </li>
+        <li class="mobile-socials__item">
+          <a
+            href="#"
+            class="mobile-socials__link"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >Twitter</a
+          >
+        </li>
+        <li class="mobile-socials__item">
+          <a
+            href="#"
+            class="mobile-socials__link"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >Facebook</a
+          >
+        </li>
+        <li class="mobile-socials__item">
+          <a
+            href="#"
+            class="mobile-socials__link"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

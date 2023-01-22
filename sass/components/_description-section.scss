@@ -1,6 +1,8 @@
 .description-section {
     padding-top: 0;
-
+    @media screen and (max-width:1199px){
+    display: none;
+    }
     &__title {
     margin-bottom: 50px;
     color: getColor('title-text-color');
@@ -13,7 +15,9 @@
     }
     
     &__list {
+    @media screen and (min-width:1200px) {
     display: flex;}
+    }
     
     &__item {
     position: relative;

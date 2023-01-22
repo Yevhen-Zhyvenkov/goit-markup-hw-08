@@ -14,8 +14,12 @@ img {
     height: auto;
 }
 .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width:1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
+    }
 }
 
 
@@ -26,7 +30,6 @@ p {
     letter-spacing: 0.03em;
 }
 
-/* body */
 body {
     color: getColor('primary-text-color');
     background-color: getColor('background-color-white');
