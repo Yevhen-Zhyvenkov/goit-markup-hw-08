@@ -1,5 +1,6 @@
 .checkbox {
     position: relative;
+    display: flex;
     margin-bottom: 31px;
     font-weight: 400;
     font-size: 12px;
@@ -28,6 +29,7 @@
     }
     
     &__label {
+    
     position: relative;
     padding-left: 24px;
     @media screen and (min-width:1200px) {
@@ -35,6 +37,7 @@
     }
     
     &__text {
+        
     color: getColor('hover-color');
     }
     &__imput:checked + &__icon {
